@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent-login {
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s linear;
+}
+.login-main {
+  width: 25%;
+  min-width: 21rem;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding-bottom: 3rem;
+  transition: all 0.8s linear;
+  transform: translateY(-110%);
+}
+
+.login-logo-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1.50214px 3.00429px rgba(0, 0, 0, 0.15);
+}
+.login-logo {
+  height: 2.5rem;
+  width: 7rem;
+  margin: 1rem 0rem;
+}
+.login-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.login-h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #484848;
+  font-family: "Outfit";
+  font-style: normal;
+  padding: 1rem 0rem;
+  margin-bottom: 0.5rem;
+}
+.label-email {
+  display: block;
+  width: 80%;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  color: #a0a0a0;
+  margin: 0px auto;
+  font-size: 0.7rem;
+}
+.relative-input {
+  position: relative;
+  width: 80%;
+  margin: 0.3rem auto 0px;
+}
+.relative-input input {
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 2.3rem;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  letter-spacing: 0.02em;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.relative-input input::placeholder {
+  color: #a0a0a0;
+}
+.div-absolute {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+.label-password {
+  margin-top: 1rem;
+}
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0px auto;
+  background: #33308b;
+  border-radius: 6px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 2.3rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all 0.3s linear;
+}
+.login-button:hover {
+  background-color: #18165f;
+  font-weight: 500;
+}
+.forget-button {
+  width: 80%;
+  margin: 0px auto;
+  border: none;
+  outline: none;
+  margin-top: 0.3rem;
+  color: #3098e4;
+  font-family: "Readex Pro";
+  font-style: normal;
+  background-color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: end;
+
+  line-height: 2.3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .parent-login {
+    align-items: flex-start;
+  }
+  .login-main {
+    min-width: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+  .label-email {
+    width: 90%;
+  }
+  .relative-input {
+    width: 90%;
+  }
+  .login-button {
+    width: 90%;
+  }
+  .forget-button {
+    width: 90%;
+  }
+}
